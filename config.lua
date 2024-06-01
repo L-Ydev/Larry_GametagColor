@@ -1,11 +1,22 @@
 Config = {}
 
 Config.Colors = {
-    ["staff"] = {255, 165, 0}, -- Orange
-    ["admin"] = {255, 0, 0} -- Rouge
+    ["admin"] = {255, 43, 255},
+    ["staff"] = {255, 43, 255} 
 }
 
 Config.Emojis = {
-    ["staff"] = "⚡​", 
-    ["admin"] = "💫​​" 
+    ["staff"] = "​​", 
+    ["admin"] = "" 
 }
+
+
+
+
+
+
+
+
+
+
+
