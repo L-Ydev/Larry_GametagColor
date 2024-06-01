@@ -54,3 +54,13 @@ AddEventHandler('onResourceStart', function(resourceName)
         ReloadConfig()
     end
 end)
+
+-- Ajout de la commande Staff:Showname
+ESX.RegisterCommand('Staff:Showname', 'admin', function(xPlayer, args, showError)
+    TriggerClientEvent('esx:showPlayerNames', -1, true)
+end, true, {help = "Afficher les noms des joueurs au-dessus de leur tête", validate = true, arguments = {}})
+
+RegisterServerEvent('esx:hidePlayerNames')
+AddEventHandler('esx:hidePlayerNames', function()
+    TriggerClientEvent('esx:showPlayerNames', -1, false)
+end)
